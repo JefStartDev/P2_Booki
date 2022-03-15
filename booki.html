@@ -1,0 +1,244 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b6b46bd03e.js" crossorigin="anonymous"></script>
+    <title>Booki</title>
+</head>
+<body> 
+    <!--Le header-->  
+    <header>        
+        <nav>
+            <img class="logo" src="Assets/images/logo/Booki.png" alt="logo" title="Booki">
+            <ul>
+                <li class=" menu"><a href="hebergement" > Hébergements</a></li>
+                <li class="menu"><a href="activités" > Activités</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+           <p>En plein centre ou en pleine nature</p>
+
+    <!--section 1-->
+
+   <div id="S1">
+    <!--la barre de recherche-->
+
+        <form method="post" action="#.php">
+            
+            <div class="srch">
+                <i class="fas fa-map-marker-alt"></i>
+             <input type="text" name="Ville" class="ville" placeholder="Marseilles,France" required>
+                    <button>Rechercher</button>
+            </div>
+        </form>
+
+    <!--Filtres-->
+
+            <div class="S1__filtres--info">
+                <label >Filtres</label>
+                    <div class="filtres"><i class="fas fa-money-bill-wave"::before><button class="filter-btn"><a href="#">Economique</a></button></i></div>
+                    <div class="filtres"><i class="fas fa-child"><button class="filter-btn"><a href="#"> Famillial</a></button></i></div>
+                    <div class="filtres"><i class="fas fa-heart"><button class="filter-btn"><a href="#">Romantique</a></button></i></div>
+                    <div class="filtres"><i class="fas fa-dog"><button class="filter-btn"><a href="#">Animaux autorisés</a></button></i></div>             
+            </div>
+            <div class="info">
+                    <p><i class="fas fa-info-circle"::before></i>Plus de 500 logements sont disponibles dans cette villes</p>
+            </div>
+    </div>
+
+    
+     <!--bloc hergement+populaires-->
+<main class="bloc__main">
+   
+   
+    <section class="bloc__section__hebergement">
+        <h2>Hébergements a Marseilles</h2>
+
+        <!--bloc des cartes hebergement marseilles-->
+         <div class=hebergement__card >
+            
+           
+             <!--blocs des rangées de cartes-->
+            <div class="col--card">
+              
+            <!--bloc de 2 carte -->
+                <article id=lacannebiere class="card__thumb">
+                    <img src="Assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                    <div class="card__title">la cannebière</div>
+                     <div class="card__price">la nuit à 25€</div>
+                    <span class="card___rate--icon"></span>
+                </article>
+
+                <article id=hoteldelamer class="card__thumb">
+                    <img src="Assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                    <div class="card__title">Hotel de la mer</div>
+                     <div class="card__price">la nuit à 25€</div>
+                    <span class="card___rate--icon"></span>
+                </article>
+                <h3>Afficher plus</h3>
+            </div>
+           
+
+      <!--bloc de 2 carte -->
+        <div class="col--card">
+            <article id=hotelduport class="card__thumb">
+                <img src="Assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                <div class="card__title">Hotel du port</div>
+                 <div class="card__price">la nuit à 25€</div>
+                <span class="card___rate--icon"></span>
+            </article>
+
+            <article id=Aubergelepanier class="card__thumb">
+                <img src="Assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                <div class="card__title">Auberge Le panier</div>
+                 <div class="card__price">la nuit à 25€</div>
+                <span class="card___rate--icon"></span>
+            </article>
+        </div>
+
+        <!--bloc de 2 carte -->
+        <div class="col--card">
+            <article id=hotellesmouettes class="card__thumb">
+                <img src="Assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                <div class="card__title">Hotel Les mouettes</div>
+                 <div class="card__price">la nuit à 25€</div>
+                <span class="card___rate--icon"></span>
+            </article>
+
+            <article id=hotelchezamina class="card__thumb">
+                <img src="Assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                <div class="card__title">Hotel Chez</div>
+                 <div class="card__price">la nuit à 25€</div>
+                <span class="card___rate--icon"></span>
+            </article>
+           
+        </div>
+        
+    </div>
+
+    </section>
+
+    <!--bloc de la section "les plus populaires"-->
+<section class="bloc--section--populaire">
+
+    <div class="col--card--pop">
+        
+        <div class="pop__card">
+            <h2>Les plus populaires</h2>
+
+            <article id=lacannebiere class="card__thumb--pop">
+                <img src="Assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <div class="card__title">la cannebière</div>
+                 <div class="card__price">la nuit à 25€</div>
+                <span class="card___rate--icon"></span>
+            </article>
+
+            <article id=lacannebiere class="card__thumb--pop">
+                <img src="Assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <div class="card__title">la cannebière</div>
+                 <div class="card__price">la nuit à 25€</div>
+                <span class="card___rate--icon"></span>
+            </article>
+
+            <a href=""><article id=lacannebiere class="card__thumb--pop">
+                <img src="Assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                    <div class="card__title">la cannebière</div>
+                    <div class="card__price">la nuit à 25€</div>
+                    <span class="card___rate--icon"></span>
+                </a>
+               
+            </article>
+        </div>
+
+    </div>
+</section>
+</main>
+   
+
+
+<h2>Activités à Marseille</h2>
+<!--bloc d'1 carte-->
+    <section class="bloc__activité">
+        <div class="act--long--card--1">
+            <article id="VieuxPort" class="card__thumb--act--long">
+                <img src="Assets/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                <div class="card__title">la cannebière</div>
+            </article>
+        </div>
+<!--bloc de 2 cartes-->
+        <div class="act--small--card--1">
+            <article id=Fortpommegues class="card__thumb--act">
+                <img src="Assets/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                <div class="card__title">la cannebière</div>
+            </article>
+
+            <article id="ilesdufrioul" class="card__thumb--act">
+                <img src="Assets/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                <div class="card__title">la cannebière</div>
+            </article>
+        </div>
+<!--bloc d'1 carte-->
+        <div class="act--long--card--2">
+            <article id="Parcdescalanques" class="card__thumb--act--long">
+                <img src="Assets/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                <div class="card__title">la cannebière</div>
+            </article>
+        </div>
+<!--bloc de 2 cartes-->
+        <div class="act--small--card--2">
+            <article id="nddelagarde" class="card__thumb--act">
+                <img src="Assets/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                <div class="card__title">la cannebière</div>
+            </article>
+
+            <article id="parclongchamp" class="card__thumb--act">
+                <img src="Assets/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                <div class="card__title">la cannebière</div>
+            </article>
+        </div>
+
+
+    </section>
+    
+
+<footer>
+    <div class="footer--section">
+        
+        <ul>
+            <h3>A propos</h3>
+            <li><p>Fonctionnement du site</p></li>
+            <li><p>Conditions générales de ventes</p></li>
+            <li><p>Données et confidentaialité</p></li>
+        </ul>
+    </div>
+
+    <div class="footer--section">
+        <ul>
+        <h3>Nos hébergements</h3>
+        <li><p>Charte Qualité</p></li>
+        <li><p>Soumettre votre hotel</p></li>
+        
+        </ul>
+    </div>
+
+    <div class="footer--section">
+        <ul>
+        <h3>Assistance</h3>
+        <li><p>Centre d'aide</p></li>
+        <li><p>Nous contacter</p></li>
+        
+    </ul>
+    </div>
+
+</footer>
+
+</body>
+</html>
