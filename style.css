@@ -507,6 +507,7 @@ i {
 }
 .card__thumb {
   flex-direction: row;
+  flex: 1;
   width: 220px;
   height: 175px;
   background-color: #ffffff;
@@ -530,12 +531,9 @@ i {
   margin-right: 35px;
   margin-left: 20px;
   border-radius: 15px;
-  line-height: 31px;
+  line-height: 20px;
 }
 
-.hebergement__card h2 {
-  margin-block-end: 0px;
-}
 .hebergement__card {
   display: flex;
   justify-self: flex-start;
@@ -552,6 +550,8 @@ i {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  flex: 1;
   width: 25%;
   margin-top: 35px;
   border-radius: 15px;
@@ -559,15 +559,17 @@ i {
 }
 .col--card--pop {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   justify-content: flex-start;
-  text-align: right;
+  text-align: left;
 }
 
 .card__thumb--pop {
   flex-direction: row;
   flex-wrap: wrap;
+  flex: 1;
   justify-content: flex-start;
   width: 260px;
   height: 125px;
@@ -579,7 +581,20 @@ i {
 .card__thumb--pop:hover {
   box-shadow: 1px 2px 5px;
 }
+.card__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  text-align: right;
+}
 
+.card__title {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  text-align: right;
+}
 .card__thumb--pop img {
   display: flex;
   border-bottom-left-radius: 10px;
@@ -597,37 +612,56 @@ i {
 
 .bloc__activité {
   display: flex;
-  justify-content: space-between;
-  width: 75%;
-  height: 500px;
-  margin: 15px 15px 10px;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 550px;
+  margin: 10px 15px 10px;
 }
 .card__thumb--act {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  object-fit: cover;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  flex: 1;
   position: relative;
-  width: 185px;
+  width: 255px;
   height: 50%;
+  margin-top: 0px;
+  background-color: #ffffff;
+  box-shadow: #deebff;
 }
 .card__thumb--act--long {
   display: flex;
+  flex-direction: column;
+  flex: 1;
   position: relative;
-  width: 155px;
-  height: 90%;
+  width: 265px;
+  height: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .card__thumb--act--long img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   object-fit: cover;
-  ;
-  margin: 5px 5px 5px;
+  flex: 1;
+  margin: 0px 0px 0px;
+  padding: 0px 15px 0px;
+  width: 100%;
+  height: 523px;
 }
 .card__thumb--act img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   object-fit: cover;
-  width:90%
-  margin: 5px 5px 5px;
+  width: 90%;
+  margin: 0px 0px 0px;
 }
 
 .card__thumb--act:hover {
