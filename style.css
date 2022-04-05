@@ -485,8 +485,11 @@ button {
 
 .bloc__main {
   display: flex;
+  width: 100%;
+  margin: 0px;
+  flex-wrap: wrap;
   background-color: #ffffff;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
 }
 #S1 .filter-btn {
@@ -501,10 +504,11 @@ article span .fas.fa-star.empty {
 }
 .bloc__section__hebergement {
   display: block;
+  width: 60%;
   height: 594px;
   background-color: #f2f2f2;
   margin-top: 35px;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-right: 25px;
   border-radius: 15px;
 }
@@ -513,7 +517,7 @@ article span .fas.fa-star.empty {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-  width: 60%;
+  width: 100%;
   height: 100%;
 }
 .affplus {
@@ -523,8 +527,8 @@ article span .fas.fa-star.empty {
   flex-direction: column;
   position: relative;
   line-height: 8px;
-  width: 230px;
-  height: 210px;
+  width: calc(100% - 16px);
+  height: calc(35% - 10px);
   background-color: #ffffff;
   border-radius: 10px;
   padding: 2px;
@@ -537,7 +541,7 @@ article span .fas.fa-star.empty {
   border-top-left-radius: 10px;
   object-fit: cover;
   width: 100%;
-  max-height: 60%;
+  max-height: 9vw;
 }
 
 .card__thumb:hover {
@@ -554,19 +558,22 @@ article span .fas.fa-star.empty {
 .col--card {
   margin-left: 15px;
   position: relative;
+  width: 30%;
 }
 
 /*section les plus populaires*/
 
 .bloc--section--populaire {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   flex: 1;
   width: 25%;
   height: 594px;
+  padding: 20px;
   margin-top: 35px;
-  margin-right: 25px;
+  margin-right: 20px;
   border-radius: 15px;
   background-color: #f2f2f2;
 }
@@ -577,7 +584,7 @@ article span .fas.fa-star.empty {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 340px;
+  width: calc(100% - 16px);
   height: 145px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -608,11 +615,7 @@ article span .fas.fa-star.empty {
   padding: 0px;
   object-fit: cover;
 }
-.bloc--section--populaire {
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-}
+
 .pop--title--item {
   display: flex;
   justify-content: space-between;
@@ -627,7 +630,7 @@ article span .fas.fa-star.empty {
 }
 /*section activités à marseille*/
 #activite {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 #activite h2 {
@@ -635,7 +638,6 @@ article span .fas.fa-star.empty {
 }
 .bloc__activité {
   display: flex;
-  justify-content: space-evenly;
   width: 100%;
   height: 65%;
   padding-bottom: 10px;
@@ -650,9 +652,9 @@ article span .fas.fa-star.empty {
   flex-direction: column;
   justify-content: flex-start;
   padding: 0px 0px 10px;
-  margin: 10px;
-  width: 265px;
-  height: 60%;
+  margin: 10px 0px 0px;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -688,10 +690,9 @@ article span .fas.fa-star.empty {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 10px;
-
   padding: 0px 0px 10px;
   width: 265px;
-  height: 87%;
+  height: calc(100% - 20px);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -864,32 +865,47 @@ footer {
     width: 100%;
   }
   .bloc__main {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 385px;
+    width: 100%;
   }
+
   .bloc__section__hebergement {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #ffffff;
     width: 100%;
     height: auto;
-    margin-left: 0px;
+    margin: 0px;
   }
   .hebergement__card {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     align-items: center;
-    width: 95%;
+    width: 98%;
+    height: 100%;
   }
-
+  .affplus {
+    display: none;
+  }
+  .info-hotel {
+    padding-bottom: 20px;
+  }
+  .card__thumb img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    max-height: 20vw;
+  }
   .col--card {
     width: 100%;
     justify-content: space-evenly;
   }
-  .affplus {
-    justify-content: flex-end;
-  }
+
   .card__thumb {
     flex-direction: column;
 
@@ -904,9 +920,10 @@ footer {
   .bloc--section--populaire {
     display: block;
     align-items: center;
-
+    flex: 1;
     width: 100%;
     margin-top: 35px;
+    margin-left: 0px;
     padding: 2px;
     border-radius: 0px;
     background-color: #f2f2f2;
@@ -915,29 +932,45 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 95%;
+    width: 100%;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 3px;
     margin: 8px 5px 8px;
   }
-  #activité {
-    display: block;
-  }
+
   .bloc__activité {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: auto;
-    margin: 0px;
+    height: 100%;
+    margin: 0px 10px 0px;
+  }
+  .card__thumb--act {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 0px 20px;
+    margin: 20px 0px 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .act--long--card {
-    height: 33%;
+    width: 100%;
+    height: 50%;
     justify-content: center;
+    align-items: center;
     margin: 0px 0px 0px;
   }
   .act--small--card {
-    height: 53%;
+    width: 100%;
+    height: 50%;
     justify-content: center;
     margin: 0px 0px 0px;
   }
